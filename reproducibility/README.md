@@ -22,13 +22,13 @@ First, we need to create a batch configuration file (named, `merif_batch_job.jso
 This file instructs Colosseum on how many nodes to instantiate and which LXC container to start on each node, among others.
 The content of the `merif_batch_job.json`, also available [here](batch/merif_batch_job.json) is as follows:
 
-https://github.com/colosseum-wiot/colosseum-merif-2023/blob/22bb39c54a161927327fed5534474edbd3d14f7b/reproducibility/batch/merif_batch_job.json#L1-L64
+https://github.com/colosseum-wiot/colosseum-merif-2023/blob/b0563c58833bd204c4f779c7e066630e34beeda3/reproducibility/batch/merif_batch_job.json#L1-L64
 
 Then, we need to create a radio configuration file (named, `merif_radio_config.conf`) and load it on the Colosseum `file-proxy` in the path `/share/nas/<team-name>/config/` (replace `<team-name>` with the name of your team).
 This file is used to pass some extra parameters to the LXC container that will be created by Colosseum.
 The content of the `merif_radio_config.conf`, also available [here](config/merif_radio_config.conf) is as follows:
 
-https://github.com/colosseum-wiot/colosseum-merif-2023/blob/16a5adccd92bb2f30388bbd415432528f0ef3133/reproducibility/config/merif_radio_config.conf#L1-L19
+https://github.com/colosseum-wiot/colosseum-merif-2023/blob/b0563c58833bd204c4f779c7e066630e34beeda3/reproducibility/config/merif_radio_config.conf#L1-L19
 
 
 ## Running the Batch Job
