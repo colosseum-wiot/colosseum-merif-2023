@@ -1,0 +1,64 @@
+{
+    "BatchName": "merif_batch_job",
+    "Duration": 300,
+    "NodeData": [
+        {
+            "ImageName": "scope-merif",
+            "ModemConfig": "merif_radio_config.conf",
+            "RFNode_ID": 1,
+            "TrafficNode_ID": 7,
+            "isGateway": true,
+            "node_type": "competitor"
+        },
+        {
+            "ImageName": "scope-merif",
+            "ModemConfig": "merif_radio_config.conf",
+            "RFNode_ID": 2,
+            "TrafficNode_ID": 6,
+            "isGateway": true,
+            "node_type": "competitor"
+        },
+        {
+            "ImageName": "scope-merif",
+            "ModemConfig": "merif_radio_config.conf",
+            "RFNode_ID": 3,
+            "TrafficNode_ID": 5,
+            "isGateway": true,
+            "node_type": "competitor"
+        },
+        {
+            "ImageName": "scope-merif",
+            "ModemConfig": "merif_radio_config.conf",
+            "RFNode_ID": 4,
+            "TrafficNode_ID": 4,
+            "isGateway": true,
+            "node_type": "competitor"
+        },
+        {
+            "ImageName": "scope-merif",
+            "ModemConfig": "merif_radio_config.conf",
+            "RFNode_ID": 5,
+            "TrafficNode_ID": 3,
+            "isGateway": true,
+            "node_type": "competitor"
+        },
+        {
+            "ImageName": "scope-merif",
+            "ModemConfig": "merif_radio_config.conf",
+            "RFNode_ID": 6,
+            "TrafficNode_ID": 2,
+            "isGateway": true,
+            "node_type": "competitor"
+        },
+        {
+            "ImageName": "scope-merif",
+            "ModemConfig": "merif_radio_config.conf",
+            "RFNode_ID": 7,
+            "TrafficNode_ID": 1,
+            "isGateway": true,
+            "node_type": "competitor"
+        }
+    ],
+    "RFScenario": 1009,
+    "TrafficScenario": 10090
+}
