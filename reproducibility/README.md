@@ -16,6 +16,8 @@ More information on batch jobs can be found [here](https://colosseumneu.freshdes
 
 We will use the srsRAN-based [SCOPE](https://openrangym.com/ran-frameworks/scope) framework (and, specifically, the public `scope-merif` LXC container) to execute an automatic batch job with the Colosseum wireless network emulator. The credentials for this LXC container are `root`/`scope` in case of an interactive experiment.
 
+The batch job will start a network with one cellular base station serving 6 user equipment terminals. Users and base station will exchange data through the [iPerf3](https://iperf.fr/) tool for about 5 minutes, during which the base station node will log relevant key performance indicators and generate some plots that can be retrieved at the end of the experiment. 
+
 ### Preparing the Batch Job
 
 First, we need to create a batch configuration file (named, `merif_batch_job.json`) on the Colosseum `file-proxy` server, in the path `/share/nas/<team-name>/batch/` (replace `<team-name>` with the name of your team, visible in at the top of the [Colosseum Reservations page](https://experiments.colosseum.net/reservations)). (Instructions on how to access Colosseum resources can be found [here](https://colosseumneu.freshdesk.com/support/solutions/articles/61000253362-accessing-colosseum-resources).)
