@@ -40,7 +40,7 @@ After creating batch and radio configuration files, the batch job is ready to be
 We log into the [Colosseum experiments portal](https://experiments.colosseum.net/) and open the [Batch Job page](https://experiments.colosseum.net/batch).
 
 In this page, we see four main sections (see figure below):
-- Available Batch Files, which lists the available batch files contained in the `/share/nas/<team-name>/batch/` directory on the `file-proxy` server (replace `<team-name>` with the name of your team)
+- Available Batch Files, which lists the available batch files contained in the `/share/nas/<team-name>/batch/` directory on the `file-proxy` server (`<team-name>` is the actual name of your team)
 - Pending Batch Jobs, which lists batch jobs that have been scheduled for execution
 - Active Batch Jobs, which lists the batch jobs that are currently running
 - Completed Batch Jobs, which lists the batch jobs that have been completed
