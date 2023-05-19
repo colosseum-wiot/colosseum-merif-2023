@@ -18,13 +18,13 @@ We will use the srsRAN-based [SCOPE](https://openrangym.com/ran-frameworks/scope
 
 ### Preparing the Batch Job
 
-First, we need to create a batch configuration file (named, `merif_batch_job.json`) and load it on the Colosseum `file-proxy` in the path `/share/nas/<team-name>/batch/` (replace `<team-name>` with the name of your team).
+First, we need to create a batch configuration file (named, `merif_batch_job.json`) on the Colosseum `file-proxy` server, in the path `/share/nas/<team-name>/batch/` (replace `<team-name>` with the name of your team). (Instructions on how to access Colosseum resources can be found [here](https://colosseumneu.freshdesk.com/support/solutions/articles/61000253362-accessing-colosseum-resources).)
 This file instructs Colosseum on how many nodes to instantiate and which LXC container to start on each node, among others.
 The content of the `merif_batch_job.json`, also available [here](batch/merif_batch_job.json) is as follows:
 
 https://github.com/colosseum-wiot/colosseum-merif-2023/blob/b0563c58833bd204c4f779c7e066630e34beeda3/reproducibility/batch/merif_batch_job.json#L1-L64
 
-Then, we need to create a radio configuration file (named, `merif_radio_config.conf`) and load it on the Colosseum `file-proxy` in the path `/share/nas/<team-name>/config/` (replace `<team-name>` with the name of your team).
+Then, we need to create a radio configuration file (named, `merif_radio_config.conf`) on the Colosseum `file-proxy` in the path `/share/nas/<team-name>/config/` (replace `<team-name>` with the name of your team).
 This file is used to pass some extra parameters to the LXC container that will be created by Colosseum.
 The content of the `merif_radio_config.conf`, also available [here](config/merif_radio_config.conf) is as follows:
 
@@ -50,8 +50,8 @@ At this point, the batch job should appear first in the "Pending Batch Jobs," th
 
 ## Retrieving Batch Job Data
 
-After the batch job has ended, we can download the generated data from Colosseum `file-proxy` server.
-To do this, first note down the reservation ID of the completed batch job, e.g., `133719` in the example above.
+After the batch job ends, we can download the generated data from Colosseum `file-proxy` server.
+To do this, first write down the reservation ID of the completed batch job, e.g., `133719` in the example above.
 Then, open a new terminal window and download the data from the `file-proxy` server in the current directory through the following `scp` command (replace `<team-name>` with the name of your team).
 
 ```bash
