@@ -22,13 +22,14 @@ The batch job will start a network with one cellular base station serving 6 user
 
 First, we need to create a batch configuration file (named, `merif_batch_job.json`) on the Colosseum `file-proxy` server, in the path `/share/nas/<team-name>/batch/` (replace `<team-name>` with the name of your team, visible in at the top of the [Colosseum Reservations page](https://experiments.colosseum.net/reservations)). (Instructions on how to access Colosseum resources can be found [here](https://colosseumneu.freshdesk.com/support/solutions/articles/61000253362-accessing-colosseum-resources).)
 This file instructs Colosseum on how many nodes to instantiate and which LXC container to start on each node, among others.
-The content of the `merif_batch_job.json`, also available [here](batch/merif_batch_job.json) is as follows:
+The content of the `merif_batch_job.json`, also available [here](batch/merif_batch_job.json) is as follows, the meaning of each of its parameters above can be found [here](https://colosseumneu.freshdesk.com/support/solutions/articles/61000253519-batch-mode-format-and-process).
 
 https://github.com/colosseum-wiot/colosseum-merif-2023/blob/b0563c58833bd204c4f779c7e066630e34beeda3/reproducibility/batch/merif_batch_job.json#L1-L64
 
 Then, we need to create a radio configuration file (named, `merif_radio_config.conf`) on the Colosseum `file-proxy` in the path `/share/nas/<team-name>/config/` (replace `<team-name>` with the name of your team).
-This file is used to pass some extra parameters to the LXC container that will be created by Colosseum.
-The content of the `merif_radio_config.conf`, also available [here](config/merif_radio_config.conf) is as follows:
+This file is used to pass some extra parameters, which are interpreted by user-defined scripts, to the LXC container instantiated on Colosseum.
+The content of the `merif_radio_config.conf`, also available [here](config/merif_radio_config.conf) is as follows.
+The meaning of the parameters in this specific example can be found [here](https://github.com/wineslab/colosseum-scope).
 
 https://github.com/colosseum-wiot/colosseum-merif-2023/blob/b0563c58833bd204c4f779c7e066630e34beeda3/reproducibility/config/merif_radio_config.conf#L1-L19
 
