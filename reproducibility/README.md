@@ -56,6 +56,7 @@ At this point, the batch job should appear first in the "Pending Batch Jobs," th
 After the batch job ends, we can download the generated data from Colosseum `file-proxy` server.
 To do this, first write down the reservation ID of the completed batch job, e.g., `133719` in the example above.
 Then, open a new terminal window and download the data from the `file-proxy` server in the current directory through the following `scp` command (replace `<team-name>` with the name of your team).
+(This command might ask you to insert the password of the public key you use to access the Colosseum remote resources or the password of your Colosseum account.)
 
 ```bash
 scp -r file-proxy:/share/nas/<team-name>/RESERVATION-133719 .
