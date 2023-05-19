@@ -18,7 +18,7 @@ We will use the srsRAN-based [SCOPE](https://openrangym.com/ran-frameworks/scope
 
 ### Preparing the Batch Job
 
-First, we need to create a batch configuration file (named, `merif_batch_job.json`) on the Colosseum `file-proxy` server, in the path `/share/nas/<team-name>/batch/` (replace `<team-name>` with the name of your team). (Instructions on how to access Colosseum resources can be found [here](https://colosseumneu.freshdesk.com/support/solutions/articles/61000253362-accessing-colosseum-resources).)
+First, we need to create a batch configuration file (named, `merif_batch_job.json`) on the Colosseum `file-proxy` server, in the path `/share/nas/<team-name>/batch/` (replace `<team-name>` with the name of your team, visible in at the top of the [Colosseum Reservations page](https://experiments.colosseum.net/reservations)). (Instructions on how to access Colosseum resources can be found [here](https://colosseumneu.freshdesk.com/support/solutions/articles/61000253362-accessing-colosseum-resources).)
 This file instructs Colosseum on how many nodes to instantiate and which LXC container to start on each node, among others.
 The content of the `merif_batch_job.json`, also available [here](batch/merif_batch_job.json) is as follows:
 
@@ -37,7 +37,7 @@ After creating batch and radio configuration files, the batch job is ready to be
 We log into the [Colosseum experiments portal](https://experiments.colosseum.net/) and open the [Batch Job page](https://experiments.colosseum.net/batch).
 
 In this page, we see four main sections (see figure below):
-- Available Batch Files, which lists the available batch files contained in the `/share/nas/<team-name>/batch/` directory on the `file-proxy` server
+- Available Batch Files, which lists the available batch files contained in the `/share/nas/<team-name>/batch/` directory on the `file-proxy` server (replace `<team-name>` with the name of your team)
 - Pending Batch Jobs, which lists batch jobs that have been scheduled for execution
 - Active Batch Jobs, which lists the batch jobs that are currently running
 - Completed Batch Jobs, which lists the batch jobs that have been completed
