@@ -29,7 +29,7 @@ https://github.com/colosseum-wiot/colosseum-merif-2023/blob/b0563c58833bd204c4f7
 Then, we need to create a radio configuration file (named, `merif_radio_config.conf`) on the Colosseum `file-proxy` in the path `/share/nas/<team-name>/config/` (replace `<team-name>` with the name of your team).
 This file is used to pass some extra parameters, which are interpreted by user-defined scripts, to the LXC container instantiated on Colosseum.
 The content of the `merif_radio_config.conf`, also available [here](config/merif_radio_config.conf) is as follows.
-The meaning of the parameters in this specific example can be found [here](https://github.com/wineslab/colosseum-scope).
+The meaning of the parameters used in this specific example can be found [here](https://github.com/wineslab/colosseum-scope).
 
 https://github.com/colosseum-wiot/colosseum-merif-2023/blob/b0563c58833bd204c4f779c7e066630e34beeda3/reproducibility/config/merif_radio_config.conf#L1-L19
 
