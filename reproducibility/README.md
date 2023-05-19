@@ -44,7 +44,7 @@ In this page, we see four main sections (see figure below):
 
 ![Batch Jobs](figure/batchjobs.png)
 
-We start the batch job by clicking on the `+` button next to the name of the batch job in the "Available Batch Files" section.
+Start the batch job by clicking on the `+` button next to its filename (which should be `merif_batch_job.json` in this example) in the "Available Batch Files" section.
 At this point, the batch job should appear first in the "Pending Batch Jobs," then in the "Active Batch Jobs," and after completing, in the "Completed Batch Jobs" sections.
 
 
